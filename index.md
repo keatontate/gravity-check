@@ -1,6 +1,6 @@
 # Under Construction
 
-## Which object is pulling on you more right now, your fridge or Jupiter?
+## Which entity is pulling on you more right now, your fridge or Jupiter?
 
 {% include calculator.html %}
 
