@@ -1,5 +1,9 @@
-## Under Construction
+# Under Construction
 
-{% include math_test.html %}
+## Which object is pulling on you more right now, your fridge or Jupiter?
 
 {% include calculator.html %}
+
+## Math Used
+
+{% include math_test.html %}
