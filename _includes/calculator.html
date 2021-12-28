@@ -1,16 +1,18 @@
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+<!--   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script> -->
   <script>
     function calculate(){
-      var A = document.getElementById("a").value;
-      var B = document.getElementById("b").value;
-      var C = document.getElementById("c").value;
-      var D = document.getElementById("d").value;
+      var G = 6.67430 * 10**-11; // Big G gravitational constant in meters/kg s
+      var m1 = document.getElementById("mass1").value;
+      var m2 = document.getElementById("mass2").value;
+      var r = document.getElementById("distance").value;
 
-      var ans = ((A * B) - (C * D)) / (C - B);
-      alert(ans);
+      var ans = G * (m1 * m2) / r**2;
+      
+      document.getElementById("result").innerHTML = ans;
+
       }
   </script>
   
@@ -18,16 +20,16 @@
 
 <body>
   <br>
-  <input type='number' id='a'/>
+  <label for="mass1">Your mass in kg:</label>
+  <input type='number' id='mass1'/>
   <br>
   <br>
-  <input type='number' id='b'/>
+  <label for="mass2">Your fridge's mass in kg:</label>
+  <input type='number' id='mass2'/>
   <br>
   <br>
-  <input type='number' id='c'/>
-  <br>
-  <br>
-  <input type='number' id='d'/>
+  <label for="distance">Your current distance from your fridge in meters:</label>
+  <input type='number' id='distance'/>
   <br>
   <br>
   <button onClick='calculate()'>Calculate</button>
