@@ -21,16 +21,16 @@
       if (ansFridge >= ansJupiter) {
         
         ans = ansFridge;
-        document.getElementById("result-object").innerHTML = document.getElementById("result-object").innerHTML + "your fridge!";
+        document.getElementById("result-object").innerHTML = "your fridge!";
 
       } else {
 
         ans = ansJupiter;
-        document.getElementById("result-object").innerHTML = document.getElementById("result-object").innerHTML + "Jupiter!";
+        document.getElementById("result-object").innerHTML = "Jupiter!";
 
       }
       
-      document.getElementById("result-force").innerHTML = document.getElementById("result-force").innerHTML + ans;
+      document.getElementById("result-force").innerHTML = ans;
 
       }
   </script>
@@ -51,12 +51,9 @@
   <br>
   <br>
   <button onClick='calculate()'>Calculate</button>
-  <br>
-  <br>
-  <div id="result-object">It's... </div>
-  <div id="result-force">With a force in Newtons of: </div>
-  <br>
-  <br>
+
+  <p>It's... </p><div id="result-object"></div>
+  <p>With a force in Newtons of: </p><div id="result-force"></div>
 
 </body>
 
