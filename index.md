@@ -1,4 +1,4 @@
-# Fridge or Jupiter? (Under Perpetual Construction...)
+# Fridge or Jupiter?
 
 ## Which entity is pulling on you more right now, your fridge or Jupiter?
 
